@@ -12,14 +12,14 @@ def render_sidebar():
         """
     )
 
-    st.sidebar.markdown("---")
-
-    # Rodapé
     st.sidebar.markdown(
-        """
-        **Versão:** 1.0  
-        **Desenvolvido por:** Lucas Marques
-        """
-    )
+    "<div style='text-align: center; font-size: 0.9em;'>"
+    "<b>Versão:</b> 1.0<br>"
+    "<b>Desenvolvido por:</b> Lucas Marques"
+    "</div>",
+    unsafe_allow_html=True
+)
+
+
 
 
