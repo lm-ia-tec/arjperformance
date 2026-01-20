@@ -6,7 +6,20 @@ from services.motor import MotorAutomacao
 st.set_page_config(
     page_title="Automação Fortes Contábil",
     layout="wide"
+    initial_sidebar_state="expanded"  # ou "collapsed"
 )
+
+# Esconde menu hamburger e rodapé do Streamlit
+hide_streamlit_style = """
+    <style>
+    /* Remove menu hamburger (canto superior direito) */
+    #MainMenu {visibility: hidden;}
+    
+    /* Remove rodapé "Made with Streamlit" */
+    footer {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("Automação Fortes Contábil 🚀")
 
@@ -49,3 +62,4 @@ def rodape():
 
 # Chame no final do app
 rodape()
+
