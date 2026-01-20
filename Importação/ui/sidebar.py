@@ -4,13 +4,22 @@ def render_sidebar():
     st.sidebar.title("🔹ARJ Contabilidade🔹")
     st.sidebar.markdown(
         """
-        **Automação Fortes Contábil**
+        **Plataforma de Automação**
 
-        - Upload de planilhas
-        - Validação de layout
-        - Preparação para importação
+        - Preparação de Layouts
+        - Validação de dados
+        - Automação contábil
         """
     )
 
+    st.sidebar.markdown("---")
+
+    # Rodapé
+    st.sidebar.markdown(
+        """
+        **Versão:** 1.0  
+        **Desenvolvido por:** Lucas Marques
+        """
+    )
 
 
