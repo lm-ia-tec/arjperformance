@@ -1,7 +1,7 @@
 import streamlit as st
 
 def render_sidebar():
-    st.sidebar.title("ℹ️ Informações")
+    st.sidebar.title("🔹ARJ Contabilidade🔹")
     st.sidebar.markdown(
         """
         **Automação Fortes Contábil**
@@ -11,5 +11,6 @@ def render_sidebar():
         - Preparação para importação
         """
     )
+
 
 
