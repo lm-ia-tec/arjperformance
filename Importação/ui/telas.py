@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def tela_upload_e_execucao():
-    st.header("📂 Importação de Planilha")
+    st.header("📥 Conversão de Planilha")
 
     arquivo = st.file_uploader(
         "Selecione o arquivo (Excel ou CSV)",
@@ -21,7 +21,7 @@ def tela_upload_e_execucao():
         st.markdown("---")
 
         executar = st.button(
-            "🚀 Executar automação",
+            "⚙️ Executar automação",
             type="primary"
         )
 
@@ -41,3 +41,4 @@ def tela_resultado(resultado):
         st.write(resultado["erros"])
     else:
         st.success("Processamento concluído com sucesso")
+
