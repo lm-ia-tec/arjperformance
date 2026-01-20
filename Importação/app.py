@@ -21,7 +21,7 @@ hide_streamlit_style = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.title("Automação Fortes Contábil 🚀")
+st.title("Automação Fortes Contábil 🕹️")
 
 # Sidebar apenas informativa
 render_sidebar()
@@ -31,7 +31,7 @@ df, executar = tela_upload_e_execucao()
 
 # Execução da automação
 if executar and df is not None:
-    with st.spinner("Executando automação..."):
+    with st.spinner("Convertendo..."):
         motor = MotorAutomacao()
         resultado = motor.executar(df)
 
@@ -62,5 +62,6 @@ def rodape():
 
 # Chame no final do app
 rodape()
+
 
 
