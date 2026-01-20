@@ -23,3 +23,29 @@ if executar and df is not None:
         resultado = motor.executar(df)
 
     tela_resultado(resultado)
+
+def rodape():
+    st.markdown(
+        """
+        <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: gray;
+            padding: 5px 0;
+            background-color: #f0f2f6; /* cor de fundo leve */
+        }
+        </style>
+        <div class="footer">
+            Versão 1.0 | Desenvolvido por Lucas Marques
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Chame no final do app
+rodape()
