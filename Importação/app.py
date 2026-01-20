@@ -5,7 +5,7 @@ from services.motor import MotorAutomacao
 
 st.set_page_config(
     page_title="Automação Fortes Contábil",
-    layout="wide"
+    layout="wide",
     initial_sidebar_state="expanded"  # ou "collapsed"
 )
 
@@ -62,4 +62,5 @@ def rodape():
 
 # Chame no final do app
 rodape()
+
 
